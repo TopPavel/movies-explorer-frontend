@@ -1,0 +1,239 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    padding: 110px 70px 125px;
+}
+
+.portfolio__info {
+    display: flex;
+    flex-direction: row;
+    margin-top: 66px;
+    justify-content: space-between;
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 600px;
+}
+
+.info-text__name {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 58px;
+    margin: 0;
+    text-align: left;
+    letter-spacing: -0.04em;
+}
+
+.info-text__spec {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 18px 0 0;
+}
+
+.info-text__desc {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 26px 0 0;
+}
+
+.info-text__social {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin-top: 99px;
+}
+
+.social-link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-right: 20px;
+    color: #000000;
+    transition: opacity .2s;
+}
+
+.portfolio-photo {
+    height: 327px;
+    width: 270px;
+    background-size: cover;
+}
+
+.list-projects {
+    margin: 100px 0 0;
+}
+
+.list-projects__title {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    color: #A0A0A0;
+    margin: 0 0 50px;
+}
+
+.projects {
+    list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+.project-item {
+    border-bottom: solid 1px #E8E8E8;
+    padding: 20px 0 19px;
+}
+
+.project-item:last-child {
+    border: none;
+    padding-bottom: 0;
+}
+
+.project-item:first-child {
+    padding-top: 0;
+}
+
+.project-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 50px;
+    text-decoration: none;
+    color: #000000;
+    transition: opacity .2s;
+    letter-spacing: -0.04em;
+}
+
+.project-link__icon {
+    background-image: url("../../../images/link__icon.svg");
+    background-repeat: no-repeat;
+    width: 29px;
+    height: 50px;
+    background-position: center;
+}
+
+.social-link:hover {
+    opacity: .7;
+}
+
+.project-link:hover {
+    opacity: .7;
+}
+
+@media screen and (max-width: 1023px) {
+    .portfolio {
+        padding: 90px 50px;
+    }
+
+    .info-text {
+        max-width: 368px;
+    }
+
+    .info-text__name {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .info-text__spec {
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 16px;
+    }
+
+    .info-text__desc {
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 20px;
+    }
+
+    .portfolio-photo {
+        height: 307px;
+        width: 256px;
+        background-size: contain;
+    }
+
+    .info-text__social {
+        margin-top: 87px;
+    }
+
+    .list-projects {
+        margin-top: 90px;
+    }
+
+    .project-link {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .portfolio {
+        padding: 70px 14px;
+    }
+
+    .portfolio__info {
+        margin-top: 60px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .portfolio-photo {
+        width: 292px;
+        height: 352px;
+    }
+
+    .info-text {
+        flex-direction: column;
+        align-items: start;
+        max-width: 550px;
+    }
+
+    .info-text__name {
+        margin-top: 40px;
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .info-text__spec {
+        margin-top: 20px;
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .info-text__desc {
+        margin-top: 20px;
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .info-text__social {
+        margin-top: 40px;
+    }
+
+    .list-projects {
+        margin-top: 69px;
+    }
+
+    .list-projects__title {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0 0 40px;
+    }
+
+    .project-link {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .project-link__icon {
+        height: 28px;
+    }
+
+}

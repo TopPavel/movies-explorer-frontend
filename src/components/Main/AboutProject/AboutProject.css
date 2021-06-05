@@ -1,0 +1,173 @@
+.about-project {
+    max-width: 1280px;
+    padding: 110px 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-project__info {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.about-project__info-block {
+    width: 550px;
+    display: block;
+}
+
+.info-block__title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+    letter-spacing: -0.04em;
+}
+
+.info-block__desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 26px 0 110px;
+}
+
+.week-line {
+    display: flex;
+    align-items: start;
+}
+
+.week-line__week {
+    /*display: block;*/
+    align-items: center;
+    text-align: center;
+}
+
+.week-line__week_count_one {
+    width: 228px;
+}
+
+.week-line__week_count_four {
+    width: calc(4 * 228px);
+}
+
+.week-line__week-name {
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 36px;
+    text-align: center;
+    margin: auto 0;
+}
+
+.week-line__week-name_color_black {
+    color: #FFFFFF;
+    background-color: black;
+}
+
+.week-line__week-name_color_gray {
+    color: #000000;
+    background-color: #F2F2F2;
+}
+
+.week-line__phase {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A0A0A0;
+    margin: 14px 0 0;
+}
+
+@media screen and (max-width: 1023px) {
+    .about-project {
+        padding: 90px 50px;
+    }
+
+    .about-project__info-block {
+        width: 319px;
+    }
+
+    .info-block__desc {
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 22px;
+        margin-bottom: 93px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about-project {
+        padding: 70px 18px;
+    }
+
+    .about-project__info {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .about-project__info-block {
+        width: 500px;
+    }
+
+    .info-block__title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .info-block__desc {
+        font-size: 11px;
+        line-height: 16px;
+        margin: 16px 0 56px;
+    }
+
+    .week-line {
+        margin-top: 4px;
+    }
+
+
+    @media screen and (max-width: 600px) {
+        .about-project__info-block {
+            max-width: 400px;
+        }
+    }
+
+    @media screen and (max-width: 399px) {
+
+        .about-project__info {
+            align-items: center;
+        }
+
+        .week-line {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about-project__info-block {
+            max-width: 284px;
+
+        }
+
+        .week-line__week-name {
+            font-size: 11px;
+            line-height: 35px;
+        }
+
+        .week-line__phase {
+            font-size: 11px;
+            margin-top: 10px;
+            line-height: 13px;
+        }
+
+        .week-line__week_count_one {
+            width: 100px;
+        }
+
+        .week-line__week_count_four {
+            width: 184px;
+        }
+    }
+
+}
+
+

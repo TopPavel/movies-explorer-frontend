@@ -1,0 +1,30 @@
+.button-container {
+    /*display: flex;*/
+    padding: 50px 70px 80px;
+}
+
+.button-container__load-more {
+    /*margin: 50px auto 0;*/
+    border: none;
+    border-radius: 6px;
+    height: 36px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    outline: none;
+    background-color: #F9F9F9;
+    padding: 0;
+}
+
+@media screen and (max-height: 1023px) {
+    .button-container {
+        padding: 50px 30px 80px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .button-container {
+        padding: 50px 10px 80px;
+    }
+}
