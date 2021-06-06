@@ -71,6 +71,23 @@
     height: 203px;
 }
 
+.films-not-found {
+    margin: 60px auto 56px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #A0A0A0;
+}
+
+.film-card__link {
+    transition: opacity .2s;
+}
+
+.film-card__link:hover {
+    opacity: .7;
+}
+
 @media screen and (max-width: 1023px) {
     .films {
         padding: 70px 30px 30px;

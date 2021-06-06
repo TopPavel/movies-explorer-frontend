@@ -7,15 +7,15 @@ const Promo = (props) => {
       <h1 className="promo__title">{'Учебный проект студента факультета Веб\u2011разработки.'}</h1>
       <nav className="promo__nav">
         <button className="promo__nav-button" onClick={() => {
-          goToAnchor('AboutProject')
+          goToAnchor('AboutProject');
         }}>О проекте
         </button>
         <button className="promo__nav-button" onClick={() => {
-          goToAnchor('Techs')
+          goToAnchor('Techs');
         }}>Технологии
         </button>
         <button className="promo__nav-button" onClick={() => {
-          goToAnchor('portfolio')
+          goToAnchor('portfolio');
         }}>Студент
         </button>
       </nav>

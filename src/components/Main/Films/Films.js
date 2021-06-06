@@ -1,16 +1,22 @@
 import React from "react"
 import FilmItem from "./FilmItem";
-import Preloader from "../../Preloader/Preloader";
+import FavoriteIcon from "./FavoriteIcon";
+import { duration } from "../../../utils/utils";
 
-const Films = ({ films, filmsIcon }) => {
+const Films = ({ films, onClickFavorite, onDeleteFavorite }) => {
 
   return (
     <div className="films">
-      <Preloader/>
       <ul className="film-list">
-        {films.map(item => (
-          <FilmItem key={item._id} title={item.title} duration={item.duration} image={item.image}
-                    icon={filmsIcon}/>
+        {films?.map(item => (
+          <FilmItem key={item.movieId}
+                    title={item.nameRU}
+                    duration={duration(item.duration)}
+                    image={item.image}
+                    trailer={item.trailer}
+                    icon={<FavoriteIcon film={item} onClickFavorite={onClickFavorite}
+                                        onDeleteFavorite={onDeleteFavorite}/>}
+          />
         ))}
       </ul>
     </div>

@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import StartNavMenu from "../NavMenu/StartNavMenu";
 import NavMenuInline from "../NavMenu/NavMenuInline";
 
-const Header = ({ logo, menuIsActive, onClickMenu }) => {
+const Header = ({ logo, menuIsActive, onClickMenu, loggedIn }) => {
 
   const handleMenuClick = (e) => {
     return onClickMenu(!menuIsActive);
@@ -44,7 +44,7 @@ const Header = ({ logo, menuIsActive, onClickMenu }) => {
       <Route exact strict path="/">
         <header className="header-row">
           <img alt="Логотип" className="header__logo" src={logo}/>
-          <StartNavMenu/>
+          {loggedIn ? <NavMenuInline menuIsActive={menuIsActive} handleMenuClick={handleMenuClick}/> : <StartNavMenu/>}
         </header>
       </Route>
     </Switch>
