@@ -105,6 +105,7 @@
     transition: .4s;
 }
 
+
 .switch-input:checked + .slider {
     background-color: #2BE080;
 }

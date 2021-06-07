@@ -10,7 +10,6 @@ const SavedMoviesPage = ({ films, filmsIcon }) => {
         <Films films={films} filmsIcon={filmsIcon}/>
         <div style={{ width: "100%", height: "140px" }}/>
       </main>
-      {/*<Footer/>*/}
     </>
   );
 }

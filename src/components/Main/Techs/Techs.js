@@ -4,7 +4,7 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 const Techs = (props) => {
 
   return (
-    <sections className="techs" id={"Techs"}>
+    <section className="techs" id={"Techs"}>
       <SectionTitle title={'Технологии'}/>
       <h2 className="techs-info">7 технологий</h2>
       <p
@@ -20,7 +20,7 @@ const Techs = (props) => {
           <li className="tech-item">mongoDB</li>
         </ul>
       </div>
-    </sections>
+    </section>
   );
 }
 

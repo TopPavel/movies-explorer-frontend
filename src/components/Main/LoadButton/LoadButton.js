@@ -1,11 +1,21 @@
 import React from "react"
+import { Route, Switch } from "react-router-dom";
 
-const LoadButton = ({ onClick }) => {
+const LoadButton = ({ onClick, isVisible }) => {
 
   return (
-    <div className="button-container">
-      <button className="button-container__load-more" onClick={onClick}>Еще</button>
-    </div>
+    <Switch>
+      <Route path="/movies">
+        <div className="button-container">
+          <button className={`button-container__load-more ${!isVisible && 'button-container__load-more_hide'}`}
+                  onClick={onClick}>Еще
+          </button>
+        </div>
+      </Route>
+      <Route path="/saved-movies">
+        <div className="button-container"/>
+      </Route>
+    </Switch>
   );
 }
 

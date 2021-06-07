@@ -1,6 +1,6 @@
 import React from "react"
 
-const FilmItem = ({ title, duration, image, icon }) => {
+const FilmItem = ({ title, duration, image, trailer, icon }) => {
 
   return (
     <>
@@ -12,7 +12,9 @@ const FilmItem = ({ title, duration, image, icon }) => {
           </div>
           {icon}
         </div>
-        <img src={image} alt="Обложка фильма" className="film-card__image"/>
+        <a href={trailer} className="film-card__link">
+          <img src={image} alt="Обложка фильма" className="film-card__image"/>
+        </a>
       </li>
     </>
   );

@@ -1,13 +1,10 @@
 import React from "react";
 
-const Sign = ({ name, onSend, children, nav }) => {
+const Sign = ({ children }) => {
 
   return (
     <div className="sign">
-      <form className={`sign-form sign__${name}`} name={`${name}-form`} onSubmit={onSend}>
-        {children}
-      </form>
-      {nav}
+      {children}
     </div>
   );
 }

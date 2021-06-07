@@ -6,7 +6,7 @@ const NotFound = ({}) => {
 
   const handleClickBack = (e) => {
     e.preventDefault();
-    history.goBack()
+    history.goBack();
   }
 
   return (

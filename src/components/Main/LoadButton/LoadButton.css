@@ -1,5 +1,6 @@
 .button-container {
     /*display: flex;*/
+    height: 36px;
     padding: 50px 70px 80px;
 }
 
@@ -17,13 +18,18 @@
     padding: 0;
 }
 
+.button-container__load-more_hide {
+    display: none;
+}
+
+
 @media screen and (max-height: 1023px) {
     .button-container {
         padding: 50px 30px 80px;
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
     .button-container {
         padding: 50px 10px 80px;
     }
